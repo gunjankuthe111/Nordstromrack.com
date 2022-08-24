@@ -1,0 +1,79 @@
+
+#container{
+    width: 1200px;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}#section{
+    display: flex;
+}
+
+#section>div{
+    padding: 15px 50px;
+    border: 1px solid gray;
+}
+#bag{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#bag>div{
+    padding-left: 30px;
+}
+#bag>div:first-child{
+    width: 60%;
+    line-height: 15px;
+}
+#bag>div+div{
+    width: 30%;
+    border-left: 1px solid;
+}
+#bag p+p+div{
+    width: 98%;
+    text-align: center;
+    border: 8px solid rgb(235, 229, 229);
+    padding-bottom: 10px;
+    line-height: 0px;
+}
+#bag p+p+div>div{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bag p+p+div>div>div{
+    width: 300px;
+    margin-right: 10px;
+    height: 20px;
+    border: 1px solid;
+}
+#prod{
+    margin-top: 20px;
+    padding-left: 20px;
+    border-top: 1px solid grey;
+}
+#prod>div:first-child{
+    display: flex;
+    align-items: center;
+}
+#prod>div:first-child>div{
+    margin-right: 20px;
+}
+#prod>div:first-child>div>p{
+    line-height: 20px;
+}
+#prod>div:first-child>div:first-child{
+    width: 10%;
+}
+#prod img{
+    width: 100%;
+}
+#prod>div:first-child>div:nth-child(2){
+    width: 30%;
+}
+#prod>div:last-child{
+    margin-top: 10px;
+}
+#prod a{
+    margin-right: 30px;
+    color: teal;
+}
