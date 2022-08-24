@@ -1,0 +1,217 @@
+.password-strength-indicator{
+    font-size: 12px;
+    display: inline-block;
+    height: 15px;
+    min-width: 20%;
+    text-align: center;
+    transition: 1s;
+    /* margin: 50px 0; */
+}
+.password-strength-indicator.very-weak
+{
+    background-color:#cf0000;
+    width: 20%;
+}
+.password-strength-indicator.weak
+{
+    background-color:#cfad00;
+    width: 40%;
+}
+.password-strength-indicator.mediocre
+{
+    background-color:#9fcf00;
+    width: 60%;
+}
+.password-strength-indicator.strong
+{
+    background-color:#5acf00;
+    width: 80%;
+}
+.password-strength-indicator.very-strong
+{
+    background-color:#31fc09;
+    width: 100%;
+}
+form{
+    /* border:1px solid black; */
+    width:320px;
+    
+}
+form>input{
+    width:97%;
+}
+form>button{
+    width: 280px;
+    margin-top:20px;
+}
+#create_ac>p{
+     text-align: left;
+    font-size: 1.5rem;
+    color: rgb(113, 113, 113);
+    font-family:Brandon Text,Arial,sans-serif ;
+}
+#fast_delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    /* border:1px solid black; */
+    height: 30px;
+    color:grey;
+    font-size: 14px;
+}
+#fast_delivery>img{
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+}
+#track_order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    /* border:1px solid black; */
+    height: 30px;
+    color:grey;
+    font-size: 14px;
+}
+#track_order>img{
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+}
+#across_brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    /* border:1px solid black; */
+    height: 30px;
+    color:grey;
+    font-size: 14px;
+}
+#across_brands>img{
+    width:25px;
+    height:25px;
+    margin-right: 15px;
+}
+#require{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:grey;
+    font-size: 14px;
+}
+#require>p:first-child{
+    color:red;
+}
+#fetch_email{
+    display: flex;
+    justify-content: space-between;
+}
+#div_firstname{
+    display: flex;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+#div_firstname>span:last-child{
+    color:red;
+}
+#div_lastname{
+    display: flex;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-weight:900;
+    font-size: 12px;
+}
+#div_lastname>span:last-child{
+    color:red;
+}
+#div_password{
+    display: flex;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+#div_password>span:last-child{
+    color:red;
+}
+#firstname{
+    height: 30px;
+    margin-bottom: 10px;
+}
+#lastname{
+    margin-bottom: 10px;
+    height: 30px;
+}
+#password{
+    margin-bottom: 10px;
+    height: 30px;
+}
+.keepme_signedin{
+        margin-top: 20px;
+        width:320px;
+        height: auto;
+        color:rgb(120, 118, 118);
+        background-color: rgba(220, 220, 220, 0.503);
+    }
+    .keepme_signedin>p{
+        color:rgb(120, 118, 118);
+        font-size: 14px;
+        margin-left: 25px;
+        padding-bottom: 5px;
+    }
+    .keepme_checkbox{
+        width:20px;
+        height:20px;
+        text-align: center;
+        cursor:pointer;
+    }
+    #tandc{
+        width:320px;
+        justify-content: center;
+        align-items: center;
+    }
+    #tandc>p{
+        text-align: justify;
+        margin-bottom: 15px;
+        color: rgb(98, 98, 98);
+    }
+    #tandc>p>a{
+        color: rgb(0, 129, 157);
+    }
+    #createac_button>button{
+        width:320px;
+        height: 40px;
+        color:white;
+        border:1px solid rgb(0, 129, 157);
+        background-color: rgb(0, 129, 157);
+        transition-duration: 0.4s;
+    }
+    #createac_button>button:hover{
+        background-color: aliceblue;
+        border:1px solid rgb(0, 129, 157) ;
+        color:rgb(0, 129, 157);
+    }
+    #create_container
+    {
+        width:330px;
+        margin: auto;
+    }
+    #fetch_email>span{
+        line-height: 32px;
+        font-size: 14px;
+        color:grey;
+    }
+    .eml{
+        font-weight: 800;
+    }
+    #pass_check{
+        cursor:pointer;
+    }
