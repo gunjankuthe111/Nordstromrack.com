@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <style>
+        #signin_container{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: auto;
+            width:550px;
+            height:auto;
+            margin-top: 100px;
+            /* border:1px solid black; */
+        }
+        #signin_form
+        {
+            padding: 5px;
+            width:480px;
+            height:auto;
+            margin:auto;
+            margin-top: 20px;
+                }
+        #cross_mark>div>img{
+            width:30px;
+            height:30px;
+            background-color: white;
+        }
+        #cross_mark>div{
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .signin_heading{
+            font-size: 1.7rem;
+            color: rgb(72, 72, 72);
+             font-family:Brandon Text,Arial,sans-serif ;
+        }
+        #form_email>span{
+            font-weight: bold;
+        }
+        #form_password>span{
+            font-weight: bold;
+        }
+        #form_email>input{
+            width:98%;
+            height:30px;
+            text-align: left;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        #form_password>input{
+            width:98%;
+            height:30px;
+            margin-top: 5px;
+        }
+        #pass_check{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            cursor:pointer;
+        }
+        .keep_text{
+            width:450px;
+            margin-left: 22px;
+            font-size: 13px;
+            color:grey;
+        }
+        #keepme_signedin{
+            margin-top: 20px;
+            width:479px;
+            height: 100px;
+            color:rgb(67, 66, 66);
+            background-color: rgba(220, 220, 220, 0.503);
+        }
+        .keepme_checkbox{
+            width:20px;
+            height:20px;
+            text-align: center;
+            cursor:pointer;
+        }
+        #signin_button>button{
+            width:480px;
+            height: 40px;
+            color:white;
+            border:1px solid rgb(0, 129, 157);
+            background-color: rgb(0, 129, 157);
+            transition-duration: 0.4s;
+        }
+        #signin_button>button:hover{
+            background-color: aliceblue;
+            border:1px solid rgb(0, 129, 157) ;
+            color:black;
+        }
+        #tandc>p{
+            text-align: justify;
+            color: rgb(98, 98, 98);
+        }
+        #tandc>p>a{
+            color: rgb(0, 129, 157);
+        }
+        .create_ac>p:last-child{
+            color: rgb(85, 84, 84);
+            margin-top: 10px;
+        }
+        .create_ac>p:last-child>a{
+            color: rgb(0, 129, 157);
+        }
+        #forget_pass>a>span{
+            color: rgb(0, 129, 157);
+        }
+    </style>
+</head>
+<body>
+    <div id="signin_container">
+        <div id="cross_mark">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsyjy0oSwyUXMEvpdNHo-hQ3cyLcDpnKYe6Q&usqp=CAU">
+            </div>
+        </div>
+        <div id="signin_form">
+            <form>
+                <div class="create_ac">
+                    <p class="signin_heading">Sign in</p>
+                    <p>New to Nordstrom Rack?<a href="signup.html">    Create an account.</a></p>
+                </div>
+
+                <div id="form_email">
+                    <span>Email</span>
+                    <input type="email" id="email_input">
+                </div>
+                <div id="form_password">
+                    <span>Password</span>
+                    <input type="password" id="myInput" >
+                 <div>
+                    <input id="pass_check"type="checkbox" onclick="myfunction()">Show Password
+                 </div>
+                </div>
+                <div id="forget_pass">
+                   <a href=""><span>Forget password?</span></a>
+                </div>
+                <div id="keepme_signedin">
+                    <input class="keepme_checkbox" type="checkbox" onclick="keepmein()">Keep me Signed in
+                    <p class="keep_text">You won't need to sign in as often. Only do this if you're on your personal device. Just sign out if you change your mind.</p>
+                </div>
+                <div id="tandc">
+                    <p>By signing in to your account, you agree to our<a href="">Privacy Policy</a> and <a href="">Terms & Conditions.</a></p>
+                </div>
+                <div id="signin_button">
+                    <button onclick="signup()">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function myfunction()
+    {
+        var x=document.getElementById("myInput");
+        if(x.type==="password")
+        {
+            x.type="text";
+        }
+        else
+        {
+            x.type="password"
+        }
+    }
+</script>

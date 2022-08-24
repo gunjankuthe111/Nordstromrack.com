@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="jquery.passwordstrength.js"></script>
+    <link rel="stylesheet" href="signupscript.css">
+</head>
+<body>
+    <div id="create_container">
+    <form>
+        <div id="create_ac">
+            <p>Create Account</p>
+        </div>
+        <div id="fast_delivery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2KmGh1O3Ov6b8yia3RX5F3dqtYHaU_lMUw&usqp=CAU">
+            <p>Check out faster</p>
+        </div>
+        <div id="track_order">
+            <img src="https://cdn-icons-png.flaticon.com/128/8096/8096567.png">
+            <p>Track orders easily</p>
+        </div>
+        <div id="across_brands">
+            <img src="https://cdn-icons-png.flaticon.com/128/568/568717.png">
+            <p>Use one sign-in across our brands</p>
+        </div>
+        <div id="require">
+            <p>*</p>
+            <p>Required</p>
+        </div>
+        <div>
+            <span class="eml">Email</span>
+        <div id="fetch_email">
+            <span class="fetch">anything@gmail.com</span>
+            <span><a href="#">Edit</a></span>
+        </div>
+        </div>
+         <div id="div_firstname">
+            <span>First name</span>
+            <span>*</span>
+        </div>
+            <input type="text" id="firstname" required>
+        <div id="div_lastname">
+            <span>Last name</span>
+            <span>*</span>
+        </div>
+            <input type="text" id="lastname" required>
+        <div id="div_password">
+            <span>Password</span>
+            <span>*</span>
+        </div>
+            <input type="password" id="password" required>
+            <div>
+                <input id="pass_check"type="checkbox" onclick="myfunction()">Show Password
+            </div>
+            <div class="keepme_signedin">
+        <input class="keepme_checkbox" type="checkbox" onclick="keepmein()">Keep me Signed in
+        <p class="keep_text">You won't need to sign in as often. Only do this if you're on your personal device. Just sign out if you change your mind.</p>
+    </div>
+    <div id="tandc">
+        <p>By signing in to your account, you agree to our<a href=""> Privacy Policy </a> and <a href="">Terms & Conditions.</a></p>
+    </div> 
+    <div id="createac_button">
+        <button onclick="signup(event)">Create Account</button>
+    </div>
+</form> 
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            $("#password").passwordStrength();
+        });
+    </script>
+</body>
+</html>
+<script>
+    let login_details=JSON.parse(localStorage.getItem("login-details"))||[];
+    function signup(event)
+    {
+        event.preventDefault()
+        let obj={   
+         firstname:document.getElementById("firstname").value,
+         lastname:document.getElementById("lastname").value,
+         password:document.getElementById("password").value,
+        }
+        if(obj.firstname!=""&&obj.lastname!=""&&obj.password!="")
+        {
+            login_details.push(obj);
+            localStorage.setItem("login-details",JSON.stringify(login_details));
+            alert(`Signup Successful ${obj.firstname}`);
+            window.location.href="signin.html";
+        }
+        else if(obj.firstname=="")
+        {
+            alert ("Enter first name")
+        }
+        else if(obj.lastname=="")
+        {
+            alert ("Enter last name")
+        }
+        else if(obj.password=="")
+        alert ("Enter password");
+    }
+    // signup()
+    function myfunction()
+    {
+        var x=document.getElementById("password");
+        if(x.type==="password")
+        {
+            x.type="text";
+        }
+        else
+        {
+            x.type="password"
+        }
+    }
+    
+</script>
