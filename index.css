@@ -1,0 +1,148 @@
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+    
+   
+}
+#searchbar{
+   width: 300%;
+   margin-right: 100%;
+   height: 85%;
+   border: 1px solid rgb(207, 205, 205);
+   margin-top: 5px;
+   
+}
+#logo{
+background-color: white;
+}
+#logo>img{
+    width: 30%;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+#sign{
+
+padding-left: 600px;
+padding-top: 0px;
+font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-weight: normal;
+            
+            
+}
+.cartbtn{
+   padding-right: 50px; 
+   padding-top: 6px;
+}
+::placeholder{
+    padding-left: 10px;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-weight: normal;
+            color: rgb(128, 128, 128);
+            font-size: medium;
+}
+#sign>a{
+    color: #00819d;
+}
+a{
+    text-decoration: none;
+    color: rgb(78, 77, 77);
+}
+.topspeech{
+    height: 40%;
+    background-color: #00819d;
+    width: 100%;
+}
+.topspeech> p{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-family: Brandon Text,Arial,sans-serif;
+            font-weight: 280;
+            margin-top: -9px;
+            
+}
+.line{
+    display: flex;
+    margin-top: 20px;
+    height: 1px;
+    width: 100%;
+    background-color:rgb(207, 205, 205);
+}
+ul {
+  
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: rgb(180, 173, 173);
+  
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: rgb(72, 70, 70);
+  font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-weight: 300;
+}
+li>button{
+    background-color: #00819d;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: normal;
+    color: white;
+    border-radius: 0;
+    border: none;
+    height: 35px;
+    width: auto;
+    
+   
+   
+}
+li>button:hover{
+    background-color: white;
+    border: 1px solid #00819d;
+    color: #00819d;
+}
+
+li:hover {
+  
+  cursor: pointer;
+}
+a:hover{
+    color: #017c97;
+    text-decoration: underline;
+}
+
+ul li ul {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 13rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 2;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
