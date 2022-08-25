@@ -11,7 +11,7 @@
             margin: auto;
             width:550px;
             height:auto;
-            margin-top: 100px;
+            margin-top: 50px;
             /* border:1px solid black; */
         }
         #signin_form
@@ -20,8 +20,8 @@
             width:480px;
             height:auto;
             margin:auto;
-            margin-top: 20px;
-                }
+            margin-top: 15px;
+        }
         #cross_mark>div>img{
             width:30px;
             height:30px;
@@ -101,13 +101,26 @@
         }
         .create_ac>p:last-child{
             color: rgb(85, 84, 84);
-            margin-top: 10px;
+            /* margin-top: 7px; */
         }
         .create_ac>p:last-child>a{
             color: rgb(0, 129, 157);
         }
         #forget_pass>a>span{
             color: rgb(0, 129, 157);
+        }
+        #warn>img{
+            width:25px;
+            height:25px;
+            margin-right: 10px;
+        }
+        #warnmsg{
+            color:rgb(209, 62, 62);
+            /* margin-left:30px; */
+        }
+        #verification_status{
+            display: flex;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -122,9 +135,18 @@
             <form>
                 <div class="create_ac">
                     <p class="signin_heading">Sign in</p>
-                    <p>New to Nordstrom Rack?<a href="signup.html">    Create an account.</a></p>
+                    <p>New to Nordstrom Rack?<a href="verify.html">   Create an account.</a></p>
                 </div>
-
+                    <div id="verification_status">
+                        <div id="warning_logo">
+                            <span id="warn"></span>
+                        </div>
+                        <div id="warnmsg">
+                            <span id="verify"></span>
+                            </br>
+                            <span id="tryagain"></span>
+                        </div>
+                    </div>
                 <div id="form_email">
                     <span>Email</span>
                     <input type="email" id="email_input">
@@ -147,7 +169,7 @@
                     <p>By signing in to your account, you agree to our<a href="">Privacy Policy</a> and <a href="">Terms & Conditions.</a></p>
                 </div>
                 <div id="signin_button">
-                    <button onclick="signup()">Sign in</button>
+                    <button onclick="signup(event)">Sign in</button>
                 </div>
             </form>
         </div>
@@ -167,4 +189,43 @@
             x.type="password"
         }
     }
+    function signup(event)
+    {
+        event.preventDefault();
+        let er1=document.getElementById("verify");
+    let er2=document.getElementById("tryagain");
+    let email=document.getElementById("email_input").value;
+    let pass=document.getElementById("myInput").value;
+    let logindata=JSON.parse(localStorage.getItem("login-details"));
+    let flag=false;
+        for(let i=0;i<logindata.length;i++)
+        {
+            let m=logindata[i].email;
+            let p=logindata[i].password;
+            if(email==m&&pass==p)
+            {
+                flag=true;
+                break;
+            }
+            else if(email!=m&&pass!=p)
+            {
+                flag=false;
+               
+            }
+        }
+        if(flag==true)
+    {
+        alert("Login Successful!")
+    }
+    else
+    {
+        let image=document.getElementById("warn");
+        let img=document.createElement("img");
+        img.src="https://cdn-icons-png.flaticon.com/128/179/179386.png";
+        image.append(img);
+        er1.innerText="Your Email or password wasn't Recognised";
+        er2.innerText="Try Again";
+    }
+    }
+    
 </script>

@@ -34,8 +34,8 @@
         <div>
             <span class="eml">Email</span>
         <div id="fetch_email">
-            <span class="fetch">anything@gmail.com</span>
-            <span><a href="#">Edit</a></span>
+            <span id="fetch"></span>
+            <span><a href="verify.html">Edit</a></span>
         </div>
         </div>
          <div id="div_firstname">
@@ -76,6 +76,9 @@
 </body>
 </html>
 <script>
+    let getmail=JSON.parse(localStorage.getItem("email"));
+    let mail=getmail[0];
+    document.getElementById("fetch").innerText=mail;
     let login_details=JSON.parse(localStorage.getItem("login-details"))||[];
     function signup(event)
     {
@@ -84,6 +87,7 @@
          firstname:document.getElementById("firstname").value,
          lastname:document.getElementById("lastname").value,
          password:document.getElementById("password").value,
+         email:mail,
         }
         if(obj.firstname!=""&&obj.lastname!=""&&obj.password!="")
         {

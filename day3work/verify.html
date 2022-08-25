@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Page</title>
+    <link rel="stylesheet" href="signupscript.css">
+</head>
+<body>
+    <div id="verify_container">
+        <div class="create_head">
+            <p>Sign in | Create Account</p>
+            <span>Enter your email to get started.</span>
+        </div>
+        <div id="ifield">
+            <span>Email</span>
+            </br>
+            <input type="email" id="email">
+            </br>
+            <span id="tc">By tapping Next, you agree to our <a href="">Privacy Policy</a> and <a href="#">Terms & Conditions.</a></span>
+            </br>
+            <button id="vbotton" onclick="passemail()">Next</button>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+function passemail()
+{
+    let email=document.getElementById("email").value;
+    if(email!="")
+    {
+    let login_details=JSON.parse(localStorage.getItem("login-details"))||[];
+    let N=login_details.length;
+    let array=[];
+    if(N==0)
+    {
+        array.push(email);
+        localStorage.setItem("email",JSON.stringify(array));
+        window.location.href="signup.html";
+    }
+    else
+    {
+        var flag=false;
+        for(let i=0;i<N;i++)
+        {
+            let el=login_details[i].email;
+            if(email==el)
+            {
+                flag=true;
+                break;
+            }
+            else
+            {
+            flag=false;
+            }   
+         }
+        if(flag==true)
+        {
+            window.location.href("sign.html");
+        }
+         else 
+        {
+            array.push(email);
+            localStorage.setItem("email",JSON.stringify(array));
+            window.location.href="signup.html";
+        }
+    }
+}
+else
+    alert ("Enter email");
+}
+</script>
