@@ -3,13 +3,26 @@
     width: 1200px;
     margin: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}#section{
+}
+#section{
     display: flex;
 }
-
+#section a{
+    text-decoration: none;
+    color: black;
+}
 #section>div{
     padding: 15px 50px;
     border: 1px solid gray;
+}
+#section>div:first-child{
+    background-color: gray;
+}
+#section>div:hover{
+    background-color: teal;
+}
+#section>div:first-child a{
+    color: white;
 }
 #bag{
     display: flex;
@@ -20,11 +33,11 @@
     padding-left: 30px;
 }
 #bag>div:first-child{
-    width: 60%;
+    width: 65%;
     line-height: 15px;
 }
 #bag>div+div{
-    width: 30%;
+    width: 25%;
     border-left: 1px solid;
 }
 #bag p+p+div{
@@ -76,4 +89,60 @@
 #prod a{
     margin-right: 30px;
     color: teal;
+}
+
+#checkout{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+}
+#checkout>div:last-child{
+    width: 350px;
+    padding-top: 20px;
+}
+#checkout>div:last-child>div{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+#checkout>div:last-child>div:nth-child(4){
+    font-size: x-large;
+    height: 50px;
+    border-top: 1px solid gray;
+}
+#checkout>div:last-child p{
+    font-size: small;
+} 
+#checkout button{
+    width: 100%;
+    height: 40px;
+    background-color: teal;
+    border: none; 
+}
+#checkout button>a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+#checkout>div:first-child>div{
+    width: 200px;
+}
+#checkout img{
+    width: 100%;
+}
+a{
+    cursor: pointer;
+}
+
+#delivery{
+    height: 98%;
+    background-color: aqua;
+}
+h4+div>div{
+    padding-right: 2px;
+}
+#restore{
+    color: aqua;
 }
