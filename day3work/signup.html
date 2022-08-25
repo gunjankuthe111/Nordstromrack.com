@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-    <script src="jquery.passwordstrength.js"></script>
     <link rel="stylesheet" href="signupscript.css">
 </head>
 <body>
@@ -34,8 +32,8 @@
         <div>
             <span class="eml">Email</span>
         <div id="fetch_email">
-            <span class="fetch">anything@gmail.com</span>
-            <span><a href="#">Edit</a></span>
+            <span id="fetch"></span>
+            <span><a href="verify.html">Edit</a></span>
         </div>
         </div>
          <div id="div_firstname">
@@ -68,14 +66,12 @@
     </div>
 </form> 
     </div>
-    <script type="text/javascript">
-        $(function() {
-            $("#password").passwordStrength();
-        });
-    </script>
 </body>
 </html>
 <script>
+    let getmail=JSON.parse(localStorage.getItem("email"));
+    let mail=getmail[0];
+    document.getElementById("fetch").innerText=mail;
     let login_details=JSON.parse(localStorage.getItem("login-details"))||[];
     function signup(event)
     {
@@ -84,6 +80,7 @@
          firstname:document.getElementById("firstname").value,
          lastname:document.getElementById("lastname").value,
          password:document.getElementById("password").value,
+         email:mail,
         }
         if(obj.firstname!=""&&obj.lastname!=""&&obj.password!="")
         {
