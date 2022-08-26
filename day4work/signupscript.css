@@ -262,8 +262,34 @@ form>button{
         margin-top: 25px;
         font-size: small;
     }
-    #vbutton:hover{
+    #ifield>button:hover{
         background-color: aliceblue;
         border:1px solid rgb(0, 129, 157) ;
         color:rgb(0, 129, 157);
     }
+    .pw-strength {
+        position:relative;
+        width:100%;
+        height:20px;
+        margin-top:10px;
+        text-align:center;
+        background:#f2f2f2;
+        display:none;
+      }
+      .pw-strength span:nth-child(1) {
+        position:relative;
+        font-size:13px;
+        color:#111;
+        z-index:2;
+        font-weight:600;
+      }
+      .pw-strength span:nth-child(2) {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:0%;
+        height:100%;
+        border-radius:5px;
+        z-index:1;
+        transition:all 300ms ease-in-out;
+      }
