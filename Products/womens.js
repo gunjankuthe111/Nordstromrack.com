@@ -30,6 +30,9 @@ function append(data){
 
         let img = document.createElement("img");
         img.setAttribute('src',avatar);
+        img.addEventListener('click',()=>{
+            producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price);
+        });
 
         let brand = document.createElement("p");
         brand.innerText = Brand;
@@ -38,16 +41,30 @@ function append(data){
         category.innerText = type;
 
         let orgPrice = document.createElement("p");
-        orgPrice.innerText = strikedOfPrice;
+        orgPrice.innerText = "$"+strikedOfPrice;
         orgPrice.style.textDecoration = "line-through";
 
         let disc = document.createElement("p");
         disc.innerText = Discount+"  "+"off";
 
-        let specialPrice = document.createElement("p");
-        specialPrice.innerText = Price;   
+        let specialPrice = document.createElement("h4");
+        specialPrice.innerText = "$"+Price;   
         
         div.append(img,category,brand,specialPrice,disc,orgPrice);
         document.getElementById("container").append(div);
     });
+}
+
+
+function producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price){
+    let productObj = {
+        avatar,
+        type,
+        Brand,
+        strikedOfPrice,
+        Discount,
+        Price,
+    }
+    localStorage.setItem('product',JSON.stringify(productObj));
+    window.location.href = 'product.html';
 }
