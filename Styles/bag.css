@@ -7,19 +7,14 @@
 #section{
     display: flex;
 }
-#section a{
-    text-decoration: none;
-    color: black;
-}
 #section>div{
     padding: 15px 50px;
     border: 1px solid gray;
+    cursor: pointer;
 }
 #section>div:first-child{
-    background-color: gray;
-}
-#section>div:hover{
     background-color: teal;
+    color: white;
 }
 #section>div:first-child a{
     color: white;
@@ -138,11 +133,14 @@ a{
 
 #delivery{
     height: 98%;
-    background-color: aqua;
+    background-color: teal;
 }
-h4+div>div{
-    padding-right: 2px;
+
+#checkout>div:last-child div+p{
+    display: flex;
+    align-items: center;
 }
-#restore{
-    color: aqua;
+#checkout>div:last-child img{
+  width: 20%;
+  margin-left: 10px;
 }

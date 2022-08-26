@@ -1,0 +1,50 @@
+#container{
+    border: 1px solid;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#products{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#products>div:first-child{
+    width: 50%;
+    border: 1px solid;
+    padding: 0px 30px;
+}
+#products>div:last-child{
+    width: 40%;
+    border: 1px solid;
+}
+#products>div:last-child>div{
+    padding: 0px 30px;
+}
+.billChild{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    line-height: 40px;
+}
+.billChild:last-child{
+    font-size: x-large;
+    border-top: 1px solid;
+}
+#data>div{
+    display: flex;
+    border-top: 1px solid;
+    padding: 10px 0px;
+    align-items: center;
+}
+#data>div>div:first-child{
+    width: 10%;
+    margin-right: 20px;
+}
+#data img{
+    width: 100%;
+}
