@@ -1,0 +1,95 @@
+#container{  
+    width: 80%;  
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
+    margin: auto;
+    gap: 8px;
+}
+
+
+#container img{
+    width: 100%;
+    cursor: pointer;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+#product{
+    width: 80%;   
+    margin: auto;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+#input{
+    font-size: 20px;
+}
+
+#size{
+    width: 60%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #F0FFFF;
+}
+
+#bag button{
+    width: 60%;
+    padding: 15px;
+    font-size: 18px;
+    font-style: unset;   
+    background-color: teal;
+    color: white;
+    border: 0px;    
+    cursor: pointer;
+}
+#bag button:hover{
+    background-color: transparent;
+    color: teal;
+    border: 3.3px solid teal;
+}
+
+#big_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue;     */
+}
+
+#big_container>#sidebar{
+    width: 15%;        
+    /* border: 1px solid pink; */    
+}
+
+#sidebar #size,#price,#color,#brand,#feature,#length,#material,#style{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #FFE4E1;
+   margin: 10px 0px;
+}
+
+#details p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+
+#cloth{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+#cloth img{
+    width: 100%;
+}
