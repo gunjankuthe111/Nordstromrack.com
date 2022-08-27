@@ -1,50 +1,108 @@
-#container{
-    border: 1px solid;
-    width: 900px;
-    margin: auto;
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#container {
+  width: 900px;
+  margin: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-#products{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+#products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#products>div:first-child{
-    width: 50%;
-    border: 1px solid;
-    padding: 0px 30px;
+#products > div:first-child {
+  width: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0px 30px;
 }
-#products>div:last-child{
-    width: 40%;
-    border: 1px solid;
+#products > div:first-child p + p {
+  color: teal;
+  font-size: small;
+  cursor: pointer;
 }
-#products>div:last-child>div{
-    padding: 0px 30px;
+#products > div:last-child {
+  width: 40%;
 }
-.billChild{
-    display: flex;
-    justify-content: space-between;
-    font-size: large;
-    line-height: 40px;
+#products > div:last-child > div {
+  padding: 10px 30px 20px 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 20px;
 }
-.billChild:last-child{
-    font-size: x-large;
-    border-top: 1px solid;
+#info > p:nth-of-type(odd) {
+  color: teal;
 }
-#data>div{
-    display: flex;
-    border-top: 1px solid;
-    padding: 10px 0px;
-    align-items: center;
+#info > p:nth-of-type(even) {
+  font-size: small;
 }
-#data>div>div:first-child{
-    width: 10%;
-    margin-right: 20px;
+.billChild {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  line-height: 40px;
 }
-#data img{
-    width: 100%;
+.billChild:last-child {
+  font-size: x-large;
+  border-top: 1px solid;
+}
+#data > div {
+  display: flex;
+  border-top: 1px solid;
+  padding: 10px 0px;
+  align-items: center;
+}
+#data > div > div:first-child {
+  width: 10%;
+  margin-right: 20px;
+}
+#data img {
+  width: 100%;
+}
+#details {
+  width: 50%;
+}
+#details > div {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 30px 10px 40px;
+  margin-top: 20px;
+}
+#details input {
+  height: 30px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+#details label {
+  font-weight: bold;
+}
+#details > div input + p,
+#details p + p {
+  font-size: small;
+  color: teal;
+  cursor: pointer;
+}
+#details p + p:nth-child(2) {
+  color: black;
+}
+#details > div:last-child button {
+  padding: 10px 20px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+#details > div:last-child button:hover {
+  background-color: rgb(5, 171, 171);
+}
+#last {
+  font-size: x-large;
+  border-top: 1px solid;
+}
+#details > div > p:first-child,
+#details > div > div > p {
+  color: teal;
 }

@@ -1,50 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="./Styles/checkout.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./Styles/checkout.css" />
+  </head>
+  <body>
     <div id="navbar"></div>
     <div id="container">
-        <div id="products">
-            <div>
-                <h1>Checkout</h1>
-                <p>Delivery</p>
-                <p>CHange shipping speed</p>
-                <div id="data"></div>
-            </div>
-            <div id="bill">
-                <div>
-                    <p>Review Order</p>
-                    <div class="billChild">
-                        <div>Total Value</div>
-                        <div>₹ <span id="total">0</span></div>
-                    </div>
-                    <div class="billChild">
-                        <div>Shipping</div>
-                        <div>₹ <span id="shipping">0</span></div>
-                    </div>
-                    <div class="billChild">
-                        <div>Estimated Tax</div>
-                        <div>₹ <span id="tax">0</span></div>
-                    </div>
-                    <div class="billChild">
-                        <div>Total Bill</div>
-                        <div>₹ <span id="totalBill">0</span></div>
-                    </div>
-                </div>
-                <div>
-                    
-                </div>
-            </div>
+      <div id="products">
+        <div>
+          <h1>Checkout</h1>
+          <p>Delivery</p>
+          <p>Change shipping speed</p>
+          <div id="data"></div>
         </div>
+        <div id="bill">
+          <div>
+            <p>Review Order</p>
+            <div class="billChild">
+              <div>Total Value</div>
+              <div>₹ <span id="total">0</span></div>
+            </div>
+            <div class="billChild">
+              <div>Shipping</div>
+              <div>₹ <span id="shipping">0</span></div>
+            </div>
+            <div class="billChild">
+              <div>Estimated Tax</div>
+              <div>₹ <span id="tax">0</span></div>
+            </div>
+            <div class="billChild">
+              <div>Estimated Bill</div>
+              <div>₹ <span id="totalBill">0</span></div>
+            </div>
+          </div>
+          <div id="info">
+            <p>Nordstrom Cares</p>
+            <p>
+              Big Brother Big Sister served 109,254 children in 2020, inspiring
+              mentoring relationships, and providing youth and families, safe,
+              proven,accessible, and free programms in all 50 states.
+            </p>
+            <p>Donate ₹500 Donate ₹100</p>
+            <p>
+              All donations are non-refundable and not eligible for tax
+              deduction. 100% of your donation goes to BBBS. Visit our term &
+              Conditions for more information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="details">
+        <div>
+          <h1>Shipping address</h1>
+          <p>*Required</p>
+          <label>First name</label><br />
+          <input
+            id="first1"
+            type="text"
+            placeholder="Enter your first name"
+          /><br />
+          <label>Last name</label><br />
+          <input id="last1" type="text" placeholder="Enetr your last name" />
+          <p>Free shipping to a Nordstrom or Nordstrom Rack store</p>
+          <label>Address</label><br />
+          <input id="add1" type="text" placeholder="Enter your address" />
+        </div>
+        <div>
+          <p>Gift options</p>
+          <p>
+            Write a message at Checkout and we'll email it to the recipent when
+            their item is delivered.
+          </p>
+          <p>Add a gift message</p>
+        </div>
+        <div>
+          <p>Contact info</p>
+          <label>Email (for order updates)*</label><br />
+          <input id="email" type="text" placeholder="Enter email" /><br />
+          <label>Phone number (for order questions)*</label><br />
+          <input id="num" type="number" placeholder="Enter your number" />
+        </div>
+        <div>
+          <p>Payment</p>
+          <h4>Credit Card</h4>
+          <label>Card number*</label><br />
+          <input
+            id="card"
+            type="number"
+            placeholder="Enter card number"
+          /><br />
+          <label>Expiry date*</label><br />
+          <input id="date" type="date" /><br />
+          <p>Billing address</p>
+          <p>Same as shipping address</p>
+          <label>First name*</label><br />
+          <input id="first2" type="text" placeholder="Enter name" /><br />
+          <label>Last name*</label><br />
+          <input id="last2" type="text" placeholder="Enter last name" /><br />
+          <label>Address*</label><br />
+          <input id="add2" type="text" placeholder="Enter address" /><br />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <p>Pay 4 interest-free 0f ₹1500 with <a href="">after pay</a></p>
+          <label>Gift card</label><br />
+          <input type="text" placeholder="Enter gift card" /><br />
+          <p>Add Nordstrom note</p>
+        </div>
+        <div>
+          <p>Promotions</p>
+          <label>Add promo code</label><br />
+          <input
+            id="promo"
+            oninput="inpt()"
+            type="text"
+            placeholder="Enter promp code"
+          /><br />
+        </div>
+        <div>
+          <div>
+            <p>Review Order</p>
+            <div class="billChild">
+              <div>Total Value</div>
+              <div>₹ <span id="totals">0</span></div>
+            </div>
+            <div class="billChild">
+              <div>Shipping</div>
+              <div>₹ <span id="shippings">0</span></div>
+            </div>
+            <div class="billChild">
+              <div>Estimated Tax</div>
+              <div>₹ <span id="taxs">0</span></div>
+            </div>
+            <div class="billChild">
+              <div>Disount</div>
+              <div>₹ -<span id="discount">0</span></div>
+            </div>
+            <div class="billChild" id="last">
+              <div>Total Bill</div>
+              <div>₹ <span id="totalBills">0</span></div>
+            </div>
+            <button onclick="buy()">Buy now</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="footer"></div>
-</body>
+  </body>
 </html>
 
 <script src="./Scripts/checkout.js"></script>
