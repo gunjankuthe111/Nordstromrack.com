@@ -23,8 +23,8 @@
     #home>div{
         height: auto;
         width:auto;
-        text-align: justify;
-        border:1px solid black;
+        text-align: left;
+        margin: auto;
     }
     #home>div:hover{
         transform: scale( 1.03);
@@ -85,9 +85,12 @@
 }
 .topright{
     margin-top: 40px;
+    margin-right:10px;
 }
 #sort{
     height: 40px;
+    width:250px;
+    text-align: left;
 }
 #ratingdiv{
     display: flex;
@@ -250,8 +253,12 @@
                 </div>
                 <div class="topright">
                     <select id="sort">
-                        <option value="Hightolow">Sort By Price:Hiigh to Low</option>
+                        <option value="Hightolow">Sort By Price:High to Low</option>
                         <option value="Lowtohigh">Sort By Price:Low to High</option>
+                        <option value="Lowtohigh">Sort By Newest first</option>
+                        <option value="Lowtohigh">Sort By Customer rating</option>
+                        <option value="Lowtohigh">Sort By Fearured</option>
+                        <option value="Lowtohigh">Sort By Percent Off</option>
                     </select>
                 </div>
             </div>
