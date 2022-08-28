@@ -110,6 +110,9 @@
         delivary.style.fontSize="20px";
         let button=document.createElement("button");
         button.innerText="Add to Bag";
+        button.addEventListener("click",function(){
+            addtobag(el);
+        })
         button.setAttribute("class","addtobaggp");
         div1.append(image);
         div3.append(rating,avp);
@@ -117,4 +120,17 @@
         container.append(div1,div2);
     }
     displaypro(el);
+    function addtobag(el)
+    {
+        let image=el.home_image;
+        let title=el.home_product_title;
+        let price=el.Price;
+        let obj={
+            image,
+            title,
+            price,
+        }
+        localStorage.setItem("bag",JSON.stringify(obj));
+        window.location.href="#";
+    }
 </script>
