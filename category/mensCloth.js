@@ -2,7 +2,7 @@ men=[
     {
     brand:"NIKE",
     name:"Swoosh Oval T-Shirt",
-    price:"$14.23 – $18.97",
+    price:14.23,
     size:"medium",
     productID:"men-1",
     category:"activeware",
@@ -11,7 +11,7 @@ men=[
 {
     brand:"adidas",
     name:"Essentials Camo T-Shirt",
-    price:"$14.24",
+    price:14.24,
     size:"large",
     productID:"men-2",
     category:"activeware",
@@ -20,7 +20,7 @@ men=[
 {
     brand:"NIKE",
     name:"Essential Dri-FIT Half Zip Golf Pullover",
-    price:"$2.00",
+    price:50.00,
     size:"small",
     productID:"men-3",
     category:"activeware",
@@ -29,7 +29,7 @@ men=[
 {
     brand:"TED BAKER LONDON",
     name:"Jarrow Trim Fit Jacket",
-    price:"$279.97",
+    price:279.97,
     size:"medium",
     productID:"men-4",
     category:"suits",
@@ -38,7 +38,7 @@ men=[
 {
     brand:"SAVILE ROW CO",
     name:"Plaid Knit Blazer",
-    price:"$99.97",
+    price:99.97,
     size:"medium",
     productID:"men-5",
     category:"suits",
@@ -47,7 +47,7 @@ men=[
 {
     brand:"BEN SHERMAN",
     name:"Performance Zip Front Track Jacket",
-    price:"$82.49",
+    price:82.49,
     size:"large",
     productID:"men-6",
     category:"suits",
@@ -56,7 +56,7 @@ men=[
 {
     brand:"FREE COUNTRY",
     name:"Water-Resistant Hooded Rain Jacket",
-    price:"$22.48",
+    price:22.48,
     size:"medium",
     productID:"men-7",
     category:"jackets",
@@ -65,7 +65,7 @@ men=[
 {
     brand:"MICHAEL KORS",
     name:"Athens Puffer Vest",
-    price:"$64.99",
+    price:64.99,
     size:"medium",
     productID:"men-8",
     category:"jackets",
@@ -74,7 +74,7 @@ men=[
 {
     brand:"SLATE & STONE",
     name:"SLATE AND STONE Woven Bomber Jacket",
-    price:"$79.99",
+    price:79.99,
     size:"medium",
     productID:"men-9",
     category:"jackets",
@@ -83,7 +83,7 @@ men=[
 {
     brand:"TRAVISMATHEW",
     name:"Excursion Knit Polo",
-    price:"$49.97",
+    price:49.97,
     size:"medium",
     productID:"men-10",
     category:"polo",
@@ -92,7 +92,7 @@ men=[
 {
     brand:"BROOKS BROTHERS",
     name:"Solid Pique Slim Fit Polo",
-    price:"$29.97",
+    price:29.97,
     size:"small",
     productID:"men-11",
     category:"polo",
@@ -101,7 +101,7 @@ men=[
 {
     brand:"ORIGINAL PENGUIN",
     name:"Knit Jersey Polo Shirt",
-    price:"$34.97",
+    price:34.97,
     size:"medium",
     productID:"men-12",
     category:"polo",
@@ -110,7 +110,7 @@ men=[
 {
     brand:"THE NORTH FACE",
     name:"Box Pullover Hoodie",
-    price:"$40.97",
+    price:40.97,
     size:"medium",
     productID:"men-13",
     category:"Sweater",
@@ -119,7 +119,7 @@ men=[
 {
     brand:"JOHN VARVATOS",
     name:"Embroidered Zip Up Hoodie",
-    price:"$99.99",
+    price:99.99,
     size:"medium",
     productID:"men-14",
     category:"Sweater",
@@ -128,7 +128,7 @@ men=[
 {
     brand:"LUCKY BRAND",
     name:"Burnout Zip Hoodie",
-    price:"$39.97",
+    price:39.97,
     size:"large",
     productID:"men-15",
     category:"Sweater",
@@ -159,7 +159,7 @@ function appendData(men){
         wbrand.innerText = brand;
         wbrand.style.fontWeight = 'bold';
         let wprice = document.createElement('h3');
-        wprice.innerText = price;
+        wprice.innerText = `$ ${price}`;
         wprice.style.color = '#191970';
         let wsize = document.createElement('p');
         wsize.innerText = size;

@@ -40,12 +40,13 @@ for (let i = 0; i < div.length; i++) {
 
 function productTransfer(elem) {
     let productObj = {
-        avatar: elem.images,
-        type: elem.category,
-        Brand: elem.brand,
-        strikedOfPrice:"199.99",
-        Discount: "50%",
-        Price:elem.price,
+        images: elem.images,
+        category: elem.category,
+        brand: elem.brand,
+        size:elem.size,
+        productID: elem.productID,
+        price:Number(elem.price),
+        name:elem.name
     }
     localStorage.setItem('product', JSON.stringify(productObj));
     window.location.href = './category/product.html';

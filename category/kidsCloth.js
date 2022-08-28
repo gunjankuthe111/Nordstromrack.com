@@ -2,7 +2,7 @@ kids=[
     {
     brand:"Z BY ZELLA GIRL",
     name:"Kids' Zella Girl Twisted Front Long Sleeve Tee",
-    price:"$8.48 – $16.97",
+    price:8.48,
     size:"small",
     productID:"kid-1",
     category:"activeware",
@@ -11,7 +11,7 @@ kids=[
 {
     brand:"ADIDAS",
     name:"Kids' Printed Track Jacket & Leggings Set",
-    price:"$28.97",
+    price:28.97,
     size:"small",
     productID:"kid-2",
     category:"activeware",
@@ -20,7 +20,7 @@ kids=[
 {
     brand:"ADIDAS",
     name:"Kids' Hooded Top & Tights Set",
-    price:"$25.97Current",
+    price:25.97,
     size:"small",
     productID:"kid-3",
     category:"activeware",
@@ -29,7 +29,7 @@ kids=[
 {
     brand:"THE NORTH FACE",
     name:"Oso Zip Fleece Hoodie",
-    price:"$42.97",
+    price:42.97,
     size:"small",
     productID:"kid-4",
     category:"jackets",
@@ -38,7 +38,7 @@ kids=[
 {
     brand:"THE NORTH FACE",
     name:"Oso Zip Fleece Hoodie",
-    price:"$42.97",
+    price:42.97,
     size:"small",
     productID:"kid-5",
     category:"jackets",
@@ -47,7 +47,7 @@ kids=[
 {
     brand:"THE NORTH FACE",
     name:"Kids' Oso Fleece Zip Hoodie",
-    price:"$58.97",
+    price:58.97,
     size:"small",
     productID:"kid-6",
     category:"jackets",
@@ -56,7 +56,7 @@ kids=[
 {
     brand:"ADIDAS",
     name:"Kids' Echo Tilt Logo Graphic Tee",
-    price:"$11.97",
+    price:11.97,
     size:"samll",
     productID:"kid-7",
     category:"activeware",
@@ -65,7 +65,7 @@ kids=[
 {
     brand:"NIKE",
     name:"Kids' Swoosh Split Graphic T-Shirt",
-    price:"$12.97",
+    price:12.97,
     size:"small",
     productID:"kid-8",
     category:"activeware",
@@ -74,7 +74,7 @@ kids=[
 {
     brand:"ADIDAS",
     name:"Kids' Innovation Long Sleeve Hooded T-Shirt",
-    price:"$14.97",
+    price:14.97,
     size:"small",
     productID:"kid-9",
     category:"activeware",
@@ -83,7 +83,7 @@ kids=[
 {
     brand:"URBAN REPUBLIC",
     name:"Soft Shell Jacket",
-    price:"$25.97",
+    price:25.97,
     size:"small",
     productID:"kid-10",
     category:"jackets",
@@ -92,7 +92,7 @@ kids=[
 {
     brand:"OPEN EDIT",
     name:"Roomy Organic Cotton Hooded Jacket",
-    price:"$11.97",
+    price:11.97,
     size:"small",
     productID:"kid-11",
     category:"jackets",
@@ -101,7 +101,7 @@ kids=[
 {
     brand:"LEVI'S®",
     name:"Kids' Batwing Logo Denim Trucker Jacket",
-    price:"$34.97",
+    price:34.97,
     size:"small",
     productID:"kid-12",
     category:"jackets",
@@ -132,7 +132,7 @@ function appendData(kids){
         wbrand.innerText = brand;
         wbrand.style.fontWeight = 'bold';
         let wprice = document.createElement('h3');
-        wprice.innerText = price;
+        wprice.innerText = `$ ${price}`;
         wprice.style.color = '#191970';
         let wsize = document.createElement('p');
         wsize.innerText = size;
