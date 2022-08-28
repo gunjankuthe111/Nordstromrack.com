@@ -36,6 +36,13 @@ function append(data){
 
         let brand = document.createElement("p");
         brand.innerText = Brand;
+        brand.style.fontWeight = '300';
+        brand.style.color = '#A52A2A';
+        brand.style.fontWeight = 'bold';
+        brand.addEventListener('click',()=>{
+            producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price);
+        });
+        brand.style.cursor = 'pointer';
 
         let category = document.createElement("p");
         category.innerText = type;
@@ -49,13 +56,14 @@ function append(data){
 
         let specialPrice = document.createElement("h4");
         specialPrice.innerText = "$"+Price;   
+        specialPrice.style.color = '#00008B	';
         
         div.append(img,category,brand,specialPrice,disc,orgPrice);
         document.getElementById("container").append(div);
     });
 }
 
-
+/*
 function producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price){
     let productObj = {
         avatar,
@@ -65,6 +73,7 @@ function producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price){
         Discount,
         Price,
     }
-    localStorage.setItem('product',JSON.stringify(productObj));
+    localStorage.setItem('allProduct',JSON.stringify(productObj));
     window.location.href = 'product.html';
 }
+*/

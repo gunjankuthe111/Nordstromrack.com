@@ -25,6 +25,25 @@
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
+    background-color: #F0F8FF;
+    /* border: 1px solid blue; */
+}
+
+/* #product #image{
+    text-align: center;
+    
+    border: 1px solid red;
+} */
+
+#product #input{
+    /* border: 1px solid teal; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#product #image img{    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 80%;
+    
 }
 
 #input{
@@ -37,7 +56,7 @@
     font-size: 15px;
     border-radius: 5px;
     border: 0px;
-    background-color: #F0FFFF;
+    background-color: #FFE4E1;
 }
 
 #bag button{
@@ -53,7 +72,7 @@
 #bag button:hover{
     background-color: transparent;
     color: teal;
-    border: 3.3px solid teal;
+    border: 2px solid teal;
 }
 
 #big_container{
