@@ -1,6 +1,18 @@
+/*
+
+links = {
+    "https://yooxdb.herokuapp.com/MenNew",
+    "https://yooxdb.herokuapp.com/MenOne",
+    "https://yooxdb.herokuapp.com/WomenNew",
+    "https://yooxdb.herokuapp.com/WomenOne",
+    "https://yooxdb.herokuapp.com/KidsNew",
+    "https://yooxdb.herokuapp.com/KidsOne",
+}
+*/
+
 async function getData(){
     try{
-        let res = await fetch(`https://yooxdb.herokuapp.com/MenNew`);
+        let res = await fetch(`https://yooxdb.herokuapp.com/KidsOne`);
         let data = await res.json();
         console.log("data",data);
         append(data);
@@ -43,6 +55,8 @@ function append(data){
     });
 }
 
+/*
+
 function producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price){
     let productObj = {
         avatar,
@@ -55,3 +69,4 @@ function producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price){
     localStorage.setItem('product',JSON.stringify(productObj));
     window.location.href = 'product.html';
 }
+*/

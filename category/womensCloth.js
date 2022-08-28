@@ -228,5 +228,5 @@ function producttransfer(brand,name,price,size,productID,category,images){
     }
     localStorage.setItem('product',JSON.stringify(productObj));
     console.log(productObj);
-    // window.location.href = 'product.html';
+    window.location.href = 'product.html';
 }

@@ -43,6 +43,7 @@ function append(data){
     });
 }
 
+/*
 function producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price){
     let productObj = {
         avatar,
@@ -55,3 +56,4 @@ function producttransfer(avatar,type,Brand,strikedOfPrice,Discount,Price){
     localStorage.setItem('product',JSON.stringify(productObj));
     window.location.href = 'product.html';
 }
+*/

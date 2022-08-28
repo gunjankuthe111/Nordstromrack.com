@@ -48,5 +48,5 @@ function productTransfer(elem) {
         Price:elem.price,
     }
     localStorage.setItem('product', JSON.stringify(productObj));
-    window.location.href = 'Products/product.html';
+    window.location.href = './category/product.html';
 }
