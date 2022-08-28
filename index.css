@@ -1,11 +1,8 @@
 nav{
     display: flex;
-    
     justify-content: space-between;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: 50px;
-    
-   
 }
 #searchbar{
    width: 300%;
@@ -25,12 +22,10 @@ background-color: white;
     margin-top: 8px;
 }
 #sign{
-
 padding-left: 600px;
 padding-top: 0px;
 font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-            font-weight: normal;
-            
+            font-weight: normal;      
             
 }
 .cartbtn{
@@ -104,9 +99,6 @@ li>button{
     border: none;
     height: 35px;
     width: auto;
-    
-   
-   
 }
 li>button:hover{
     background-color: white;
