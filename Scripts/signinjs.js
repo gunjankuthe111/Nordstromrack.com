@@ -37,7 +37,7 @@ function myfunction()
         if(flag==true)
     {
         alert("Login Successful!")
-        window.location.href="#";
+        window.location.href="./index.html";
 
     }
     else

@@ -1,14 +1,14 @@
-let data = async () => {
-  try {
-    let res = await fetch("https://fakestoreapi.com/products?limit=5");
-    res = await res.json();
-    localStorage.setItem("bag", JSON.stringify(res));
-  } catch (err) {
-    console.log(err);
-  }
-};
+// let data = async () => {
+//   try {
+//     let res = await fetch("https://fakestoreapi.com/products?limit=5");
+//     res = await res.json();
+//     localStorage.setItem("bag", JSON.stringify(res));
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
-data();
+// data();
 
 let bagData = JSON.parse(localStorage.getItem("bag")) || [];
 let appendData = (bagData) => {

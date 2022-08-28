@@ -225,5 +225,5 @@ let gphome_data_bestseller=[
         let arr=[];
         arr.push(el);
         localStorage.setItem("gphome",JSON.stringify(arr));
-        window.location.href="gpshowprod.html"
+        window.location.href="./Day5/gpshowprod.html"
     }

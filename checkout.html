@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
     <link rel="stylesheet" href="./Styles/checkout.css" />
+    <link rel="stylesheet" href="./Styles/nav.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
   </head>
   <body>
     <div id="navbar"></div>
@@ -153,3 +155,16 @@
 </html>
 
 <script src="./Scripts/checkout.js"></script>
+<script type="module">
+    // import head from "./Components/header.js";
+    // let header = document.getElementById("header");
+    // header.innerHTML = head();
+
+    import func from "./Components/navbar.js";
+    let navbar = document.getElementById("navbar");
+    navbar.innerHTML = func();
+    
+    import foot from "./Components/footer.js";
+    let footer = document.getElementById("footer");
+    footer.innerHTML = foot();
+</script>

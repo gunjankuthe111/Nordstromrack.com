@@ -35,7 +35,9 @@
 form{
     /* border:1px solid black; */
     width:320px;
-    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    margin-top: 100px;
 }
 form>input{
     width:97%;
@@ -221,6 +223,8 @@ form>button{
         width:350px;
         height:auto;
         /* border:1px solid black; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 30px;
     }
     .create_head>p{
         font-size: 1.4rem;

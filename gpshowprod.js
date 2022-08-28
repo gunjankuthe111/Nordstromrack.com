@@ -55,5 +55,5 @@ let Product=JSON.parse(localStorage.getItem("gphome"));
             price,
         }
         localStorage.setItem("bag",JSON.stringify(obj));
-        window.location.href = "./rebel-snow-4871/bag.html";
+        window.location.href = "./bag.html";
     }
