@@ -2,7 +2,7 @@ women=[
     {
         brand:"90 DEGREE BY REFLEX",
         name:"Faux Cracked Leather High Rise Ankle Leggings",
-        price:"$19.97",
+        price:19.97,
         size:"medium",
         productID:"wmen-4",
         category:"activeware",
@@ -11,7 +11,7 @@ women=[
     {
     brand:"MELROSE AND MARKET",
     name:"High Neck Knit Tank Top",
-    price:"$3.88 – $6.48",
+    price:3.88,
     size:"medium",
     productID:"wmen-1",
     category:"women-clothing",
@@ -19,8 +19,8 @@ women=[
 },
 {
     brand:"LOVESTITCH",
-    name:"Gauze Maxi Dress",
-    price:"$14.98 – $29.97",
+    name:"Giuze Maxi Dress",
+    price:14.98,
     size:"regular",
     productID:"wmen-2",
     category:"women-clothing",
@@ -29,7 +29,7 @@ women=[
 {
     brand:"MAXSTUDIO",
     name:"Pleated Midi Skirt",
-    price:"$23.98 – $29.97",
+    price:23.98,
     size:"medium",
     productID:"wmen-3",
     category:"women-clothing",
@@ -38,7 +38,7 @@ women=[
 {
     brand:"Z BY ZELLA",
     name:"Shooting Star Drape Collar Cardigan",
-    price:"$29.97",
+    price:29.97,
     size:"large",
     productID:"wmen-5",
     category:"activeware",
@@ -47,7 +47,7 @@ women=[
 {
     brand:"ELECTRIC YOGA",
     name:"Keep It Up Twist Front Tank",
-    price:"$16.97",
+    price:16.97,
     size:"medium",
     productID:"wmen-6",
     category:"activeware",
@@ -56,7 +56,7 @@ women=[
 {
     brand:"CALVIN KLEIN",
     name:"Two Button Short Jacket",
-    price:"$59.97",
+    price:59.97,
     size:"medium",
     productID:"wmen-7",
     category:"blazers",
@@ -65,7 +65,7 @@ women=[
 {
     brand:"BB DAKOTA BY STEVE MADDEN",
     name:"Plaid For You Blazer",
-    price:"$47.97",
+    price:47.97,
     size:"medium",
     productID:"wmen-8",
     category:"blazers",
@@ -74,7 +74,7 @@ women=[
 {
     brand:"BELLE AND BLOOM",
     name:"Princess Polly Textured Blazer",
-    price:"$65.98",
+    price:65.98,
     size:"medium",
     productID:"wmen-9",
     category:"blazers",
@@ -83,7 +83,7 @@ women=[
 {
     brand:"BLANKNYC",
     name:"Faux Leather Jacket",
-    price:"$59.97",
+    price:59.97,
     size:"small",
     productID:"wmen-10",
     category:"jackets",
@@ -92,7 +92,7 @@ women=[
 {
     brand:"GUESS",
     name:"Removable Faux Fur Collar Wool Blend Double Breasted Walker Coat",
-    price:"$139.97 – $159.97",
+    price:139.97,
     size:"large",
     productID:"wmen-11",
     category:"jackets",
@@ -101,7 +101,7 @@ women=[
 {
     brand:"SEBBY",
     name:"Water-Resistant Hooded Double-Breasted Trench Coat",
-    price:"$59.97",
+    price:59.97,
     size:"large",
     productID:"wmen-12",
     category:"jackets",
@@ -110,7 +110,7 @@ women=[
 {
     brand:"MAGGY LONDON",
     name:"Ruffle Sleeveless Jumpsuit",
-    price:"$64.99",
+    price:64.99,
     size:"medium",
     productID:"wmen-13",
     category:"suits",
@@ -119,7 +119,7 @@ women=[
 {
     brand:"ALEXIA ADMOR",
     name:"Draped One-Shoulder Jumpsuit",
-    price:"$69.97Current Price $69.97",
+    price:69.97,
     size:"medium",
     productID:"wmen-14",
     category:"suits",
@@ -128,7 +128,7 @@ women=[
 {
     brand:"MARINA",
     name:"Beaded Sleeve Wrap Jumpsuit",
-    price:"$99.97",
+    price:99.97,
     size:"large",
     productID:"wmen-15",
     category:"suits",
@@ -137,7 +137,7 @@ women=[
 {
     brand:"FLORA BY FLORA NIKROOZ",
     name:"Piped Long Sleeve Button Front Top & Pants Set",
-    price:"$22.48 – $29.97",
+    price:22.48,
     size:"medium",
     productID:"wmen-16",
     category:"sleepwear",
@@ -146,7 +146,7 @@ women=[
 {
     brand:"HONEYDEW INTIMATES",
     name:"HONEYDEW Lace Trim Racerback Tank & Pants 2-Piece Pajama Set",
-    price:"$22.97 – $24.97",
+    price:22.97,
     size:"small",
     productID:"wmen-17",
     category:"sleepwear",
@@ -155,7 +155,7 @@ women=[
 {
     brand:"FLORA NIKROOZ",
     name:"Payton Robe, Tank Top, & Pants Travel 3-Piece Pajama Set",
-    price:"$24.97",
+    price:24.97,
     size:"medium",
     productID:"wmen-18",
     category:"sleepwear",
@@ -164,7 +164,7 @@ women=[
 {
     brand:"FREE PEOPLE",
     name:"Colby Raw Edge Top",
-    price:"$24.99 – $34.97",
+    price:24.99,
     size:"medium",
     productID:"wmen-19",
     category:"tops",
@@ -173,7 +173,7 @@ women=[
 {
     brand:"FREE PEOPLE",
     name:"Say the Word Floral Cotton & Modal Knit Top",
-    price:"$22.97 – $34.99",
+    price:22.97,
     size:"small",
     productID:"wmen-20",
     category:"tops",
@@ -204,7 +204,7 @@ function appendData(women){
         wbrand.innerText = brand;
         wbrand.style.fontWeight = 'bold';
         let wprice = document.createElement('h3');
-        wprice.innerText = price;
+        wprice.innerText = `$ ${price}`;
         wprice.style.color = '#191970';
         let wsize = document.createElement('p');
         wsize.innerText = size;

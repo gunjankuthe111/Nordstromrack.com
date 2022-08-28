@@ -23,7 +23,7 @@ function append({brand,name,price,category,images} = productDetails){
     
 
     let specialPrice = document.createElement("h4");
-    specialPrice.innerText = price;    
+    specialPrice.innerText = `$ ${price}`;    
     specialPrice.style.color = '#0000CD';   
 
     let shipping = document.createElement("p");
