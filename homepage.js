@@ -3,7 +3,7 @@ let sec_3_counter = 0;
 let div_3 = document.querySelector("#mid-sec-3>img");
 div_3.src = "https://n.nordstrommedia.com/id/147b8db9-5f12-4d97-8346-d930aa5c35ba.jpeg?h=720&w=1608";
 div_3.addEventListener("click", function () {
-    window.location.href = "womens.html"
+    window.location.href = "./womensCloth.html"
 })
 setInterval(function () {
     if (sec_3_counter == mid_sec_3.length) {
@@ -12,7 +12,7 @@ setInterval(function () {
     div_3.src = mid_sec_3[sec_3_counter].image;
     sec_3_counter++;
     div_3.addEventListener("click", function () {
-        window.location.href = "womens.html"
+        window.location.href = "./womensCloth.html"
     })
 }, 3000);
 
