@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping-Bag</title>
     <link rel="stylesheet" href="./Styles/bag.css" />
+    <link rel="stylesheet" href="./Styles/nav.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./index.css">
+
   </head>
   <body>
+    <div id="header"></div>
     <div id="navbar"></div>
     <div id="container">
       <div id="section">
@@ -83,3 +88,16 @@
 </html>
 
 <script src="./Scripts/bag.js"></script>
+<script type="module">
+    import head from "./Components/header.js";
+    let header = document.getElementById("header");
+    header.innerHTML = head();
+
+    import func from "./Components/navbar.js";
+    let navbar = document.getElementById("navbar");
+    navbar.innerHTML = func();
+    
+    import foot from "./Components/footer.js";
+    let footer = document.getElementById("footer");
+    footer.innerHTML = foot();
+</script>
