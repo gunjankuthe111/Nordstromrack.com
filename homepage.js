@@ -30,11 +30,10 @@ setInterval(function () {
 
 
 let data = JSON.parse(localStorage.getItem("product")) || [];
-let div = document.querySelectorAll("#md-box-1>div")
-console.log(div)
+let div = document.querySelectorAll("#md-box-1>div");
 for (let i = 0; i < div.length; i++) {
     div[i].addEventListener("click",function(){
-        productTransfer(div[i])
+        productTransfer(mid_sec_1[i])
     })
 }
 
@@ -44,9 +43,10 @@ function productTransfer(elem) {
         avatar: elem.images,
         type: elem.category,
         Brand: elem.brand,
+        strikedOfPrice:"199.99",
         Discount: "50%",
-        Price: `$${elem.price}`,
+        Price:elem.price,
     }
     localStorage.setItem('product', JSON.stringify(productObj));
-    window.location.href = 'product.html';
+    window.location.href = 'Products/product.html';
 }
