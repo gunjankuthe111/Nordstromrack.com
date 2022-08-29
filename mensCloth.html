@@ -8,8 +8,10 @@
      <link rel="stylesheet" href="./category/style.css">
     <link rel="stylesheet" href="./Styles/nav.css">
     <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/header.css">
 </head>
 <body>
+    <div id="header"></div>
      <div id="navbar"></div>
     <div id="big_container">
         <div id="sidebar">
@@ -91,9 +93,9 @@
 </body>
 <script src="./category/mensCloth.js"></script>
 <script type="module">
-    // import head from "./Components/header.js";
-    // let header = document.getElementById("header");
-    // header.innerHTML = head();
+    import head from "./Components/header.js";
+    let header = document.getElementById("header");
+    header.innerHTML = head();
 
     import func from "./Components/navbar.js";
     let navbar = document.getElementById("navbar");

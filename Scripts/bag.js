@@ -38,7 +38,7 @@ let appendData = (bagData) => {
     let p1 = document.createElement("p");
     p1.innerText = title;
     let p2 = document.createElement("p");
-    p2.innerText = `Price :- ₹ ${price}`;
+    p2.innerText = `Price :- $ ${price}`;
 
     let b1 = document.createElement("a");
     b1.innerText = "Remove";
@@ -85,10 +85,10 @@ let appendData = (bagData) => {
   document.getElementById("bill").innerText = bill.toFixed(2);
 
   let delivery = document.getElementById("delivery");
-  if (bill >= 500) {
+  if (bill >= 150) {
     delivery.style.width = "100%";
   } else {
-    let a = (bill / 500) * 100;
+    let a = (bill / 150) * 100;
     delivery.style.width = `${a}%`;
   }
 };
@@ -122,7 +122,7 @@ let appendSaved = () => {
     let p1 = document.createElement("p");
     p1.innerText = title;
     let p2 = document.createElement("p");
-    p2.innerText = `Price :- ₹ ${price}`;
+    p2.innerText = `Price :- $ ${price}`;
 
     let b1 = document.createElement("a");
     b1.innerText = "Add to cart";
@@ -164,7 +164,7 @@ let appendSaved = () => {
   section1.style.color = "black";
 
   let section2 = document.querySelector("#section>div:last-child");
-  section2.style.backgroundColor = "teal";
+  section2.style.backgroundColor = "#00819d";
   section2.style.color = "white";
 
   let later = document.querySelector("#bag>div>h1");

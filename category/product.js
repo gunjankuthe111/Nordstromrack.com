@@ -71,6 +71,7 @@ function addToBag(brand,name,price,category,images){
     else{
         localStorage.setItem('bag',JSON.stringify(productArr));
         console.log(productArr);
+        alert("Product added to cart");
     }    
 }
 

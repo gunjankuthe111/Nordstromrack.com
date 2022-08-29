@@ -16,6 +16,16 @@
   background-color: #00819d;
   color: white;
 }
+#section > div:first-child:hover{
+  background-color: #08677d;
+  border: 1px solid #00819d;
+  font-weight: bold;
+}
+#section > div:last-child:hover{
+  background-color: #08677d;
+  color: white;
+  font-weight: bold;
+}
 #section > div:first-child a {
   color: white;
 }

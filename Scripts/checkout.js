@@ -12,7 +12,7 @@
         let p1 = document.createElement("p");
         p1.innerText = title;
         let p2 = document.createElement("p");
-        p2.innerText = `Price :- ₹ ${price}`;
+        p2.innerText = `Price :- $ ${price}`;
 
         div1.append(img);
         div2.append(p1,p2);

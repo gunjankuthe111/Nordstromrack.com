@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./Styles/bag.css" />
     <link rel="stylesheet" href="./Styles/nav.css">
     <link rel="stylesheet" href="./Styles/footer.css">
-    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <link rel="stylesheet" href="./Styles/header.css">
 
   </head>
   <body>
@@ -25,12 +25,12 @@
           <p>Items in your bag are not on hold.</p>
           <p>Add a gift message when you check out.</p>
           <div>
-            <h4>Get free shipping on orders over ₹500</h4>
+            <h4>Get free shipping on orders over $150</h4>
             <div>
               <div>
                 <div id="delivery"></div>
               </div>
-              <p>₹500</p>
+              <p>$150</p>
             </div>
           </div>
           <div id="products"></div>
@@ -49,22 +49,22 @@
             <div>
               <div>
                 <div>Subtotal</div>
-                <div>₹<span id="total">0</span></div>
+                <div>$<span id="total">0</span></div>
               </div>
               <div>
                 <div>Shipping</div>
-                <div>₹<span id="shipping">0</span></div>
+                <div>$<span id="shipping">0</span></div>
               </div>
               <div>
                 <div>Estimated tax</div>
-                <div>₹<span id="tax">0</span></div>
+                <div>$<span id="tax">0</span></div>
               </div>
               <div>
                 <div>Estimated total</div>
-                <div>₹<span id="bill">0</span></div>
+                <div>$<span id="bill">0</span></div>
               </div>
               <p>
-                or 4 interest-free payments of ₹1500 with<img
+                or 4 interest-free payments of $1500 with<img
                   src="https://www.refine.com.au/wp-content/uploads/2020/03/afterpay-logo-300x167.png"
                 />
               </p>
@@ -72,7 +72,7 @@
                 <a href="./checkout.html">Checkout</a>
               </button>
               <p>
-                Get a ₹4000 Bonus Note when you use a new Nordstrom credit
+                Get a $4000 Bonus Note when you use a new Nordstrom credit
                 card.<a href="">Apply now</a>
               </p>
             </div>
@@ -89,9 +89,9 @@
 
 <script src="./Scripts/bag.js"></script>
 <script type="module">
-    // import head from "./Components/header.js";
-    // let header = document.getElementById("header");
-    // header.innerHTML = head();
+    import head from "./Components/header.js";
+    let header = document.getElementById("header");
+    header.innerHTML = head();
 
     import func from "./Components/navbar.js";
     let navbar = document.getElementById("navbar");

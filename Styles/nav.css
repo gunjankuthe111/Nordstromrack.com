@@ -134,3 +134,6 @@
 .menu > li:hover .submenu li:nth-child(odd){
   transform: skewX(-25deg) translateX(-15px);     
 }
+nav{
+  margin-top: -40px;
+}
