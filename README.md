@@ -27,7 +27,7 @@ Clone of fashion products E-commerce website.  We have added Authentication func
 <h2>Project Outcome</h2>
 <p>Gained great experience of HTML, CSS and JavaScript,</p>
 <p>Learned Team collaboration,</p>
-<p>learn how to lead a team,</p>
+<p>Learn how to lead a team,</p>
 <p>Project presentation skill improved.</p>
 
 <h2>ScreenShots<h2>
