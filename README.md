@@ -1,4 +1,4 @@
-<h1 align="center"> Hi,<img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> There/h1
+<h1 align="center"> Hi,<img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> There</h1>
 
 # Nordstromrack.com
 Clone of fashion products E-commerce website.  We have added Authentication functionality, added add to cart, save for latter functionalty along with checkout function.
